@@ -1,0 +1,19 @@
+<html>
+    <link rel='icon' href='/static/img/callbreak.png'>
+    <title> Call-break </title>
+    <body ng-app="callBreak">
+        <div ng-controller = "cardCtrl">
+            <ul ng-repeat = "all in cards">
+                <li><img ng-src="{{ all.imagpath}}"></li>
+            </ul>
+        
+        </div>
+    </body>
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/callbreak.js"></script>
+    
+    <!-- controller -->
+    <script type="text/javascript" src="/js/controller/cardCtrl.js"></script>
+    <!--services---->
+    <script type="text/javascript" src="/js/service/callbreak_services.js"></script>
+</html>
