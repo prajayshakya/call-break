@@ -1,15 +1,34 @@
 <html>
+    
     <link rel='icon' href='/static/img/callbreak.png'>
     <title> Call-break </title>
     <body ng-app="callBreak">
-        <div ng-controller = "cardCtrl">
-<!--
-            <ul ng-repeat = "all in cards">
-                <li><img  id="img" ng-src="{{ all.imagpath}}"></li>
-            </ul>
--->
-        
+    
+    <div id = "container" ng-controller = "cardCtrl"> 
+   
+        <div id="innerCont">
+            <div id="cont3">
+            <div id="player1">player1
+                <player1-dir></player1-dir>
+            </div>
+            </div> 
+            
+            <div id = "cont2">
+            <div id="player2">player2
+                <player2-dir></player2-dir>
+            </div>
+            <div id="player3">player3
+                <player3-dir></player3-dir>
+            </div>
+            </div>
+            <div id="cont4">
+            <div id="player4">player4
+                 <player4-dir></player4-dir>
+            </div>
+            </div>    
         </div>
+    
+        </div>   
     </body>
     <link rel="stylesheet" href="/style/style.css">
     <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
@@ -19,4 +38,11 @@
     <script type="text/javascript" src="/js/controller/cardCtrl.js"></script>
     <!--services---->
     <script type="text/javascript" src="/js/service/callbreak_services.js"></script>
+    
+    <!--directive----->
+    <script type="text/javascript" src="/js/directive/player1Dir.js"></script>
+    <script type="text/javascript" src="/js/directive/player2Dir.js"></script>
+    <script type="text/javascript" src="/js/directive/player3Dir.js"></script>
+    <script type="text/javascript" src="/js/directive/player4Dir.js"></script>
+
 </html>

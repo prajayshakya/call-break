@@ -1,6 +1,42 @@
+@import "/style/style1.css";
+@import "/style/style2.css";
 
-#img{
-    height:140px;
-    width=120px;
-    float:left;
+body{
+    background-image: url("/static/img/image1.jpg");
+}
+
+#container{
+    background-color: white;
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#innerCont{
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    background-image: url("/static/img/image3.jpg");
+}
+
+#cont2{
+    width:1000px;
+    height:470px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: yellow;
+    background-image: url("/static/img/image2.jpg");
+}
+#cont3{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: orange;
+}
+#cont4{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: khaki;
 }
