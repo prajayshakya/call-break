@@ -1,5 +1,6 @@
 
-            <div ng-repeat = "all in player4">
-                <img id="img-p1" ng-src="{{ all.imagpath}}">
+            <div ng-repeat = "all in player4 | orderBy:'type'">
+                <img class="img-p1" ng-src="{{ all.imagpath}}">
+               
             </div>     
 
